@@ -30,18 +30,40 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UPT-UA-5ex"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bve-AB-DeC">
+                                <rect key="frame" x="146.66666666666666" y="154" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="pCh-Gj-hND"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nO9-id-741">
+                                <rect key="frame" x="146.66666666666666" y="193" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="okr-4M-9QH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YtN-Fe-OXJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MZM-1T-Rn2"/>
-                            <constraint firstItem="g2B-Gz-fDO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kdz-wv-gez"/>
-                            <constraint firstItem="YtN-Fe-OXJ" firstAttribute="top" secondItem="g2B-Gz-fDO" secondAttribute="bottom" constant="9" id="tcT-93-asC"/>
-                            <constraint firstItem="g2B-Gz-fDO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="uDq-1b-BbW"/>
+                            <constraint firstItem="nO9-id-741" firstAttribute="top" secondItem="bve-AB-DeC" secondAttribute="bottom" constant="5" id="1Gk-dx-Dcn"/>
+                            <constraint firstItem="nO9-id-741" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AoT-T9-P68"/>
+                            <constraint firstItem="g2B-Gz-fDO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="F3q-Kn-5TE"/>
+                            <constraint firstItem="g2B-Gz-fDO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LJy-du-R6i"/>
+                            <constraint firstItem="bve-AB-DeC" firstAttribute="top" secondItem="YtN-Fe-OXJ" secondAttribute="bottom" constant="10" id="N8O-6P-Ezw"/>
+                            <constraint firstItem="bve-AB-DeC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RID-ma-UIJ"/>
+                            <constraint firstItem="YtN-Fe-OXJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b9h-jN-xoi"/>
+                            <constraint firstItem="YtN-Fe-OXJ" firstAttribute="top" secondItem="g2B-Gz-fDO" secondAttribute="bottom" constant="9" id="zvZ-Yt-bDw"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="coolLabel" destination="g2B-Gz-fDO" id="4bV-KB-IwF"/>
+                        <outlet property="text1" destination="bve-AB-DeC" id="Bxw-dl-Yhu"/>
+                        <outlet property="text2" destination="nO9-id-741" id="Y38-9C-3yp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
